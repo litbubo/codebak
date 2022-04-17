@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "22_使用初始化列表初始化聚合类型的变量", "22_使用初始化列表初始化聚合类型的变量.vcxproj", "{441EAC3B-9D5C-41BC-861C-459810F9DD55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Debug|x64.ActiveCfg = Debug|x64
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Debug|x64.Build.0 = Debug|x64
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Debug|x86.ActiveCfg = Debug|Win32
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Debug|x86.Build.0 = Debug|Win32
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Release|x64.ActiveCfg = Release|x64
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Release|x64.Build.0 = Release|x64
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Release|x86.ActiveCfg = Release|Win32
+		{441EAC3B-9D5C-41BC-861C-459810F9DD55}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1831092-2976-42FC-B703-F4CDC9184EEE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+SELECT Sno
+FROM Student
+WHERE Sdept = '信息学院'
+UNION
+SELECT Sno
+FROM Student
+WHERE Sage <= 19;

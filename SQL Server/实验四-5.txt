@@ -1,0 +1,4 @@
+CREATE VIEW S_BT(Sno, Snamae, Sbrith)
+AS
+SELECT Sno, Sname, 2017-Sage
+FROM Student

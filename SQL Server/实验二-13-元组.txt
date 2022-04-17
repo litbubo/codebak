@@ -1,0 +1,3 @@
+SELECT Sname
+FROM Student
+WHERE Sage < 20;

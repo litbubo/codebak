@@ -1,0 +1,15 @@
+[2021-11-12 20:59:04]	[done]
+	build successfully !
+
+[2021-11-12 21:19:02]	compilation failed at : "d:\Programming exercises\C51\单片机作业2021-11-14\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-12 21:19:24]	compilation failed at : "d:\Programming exercises\C51\单片机作业2021-11-14\src\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-12 21:20:01]	[done]
+	build successfully !
+
+[2021-11-12 21:35:49]	[done]
+	build successfully !
+

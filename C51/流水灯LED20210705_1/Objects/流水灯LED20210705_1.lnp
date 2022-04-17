@@ -1,0 +1,3 @@
+".\Objects\main.obj" 
+TO ".\Objects\流水灯LED20210705_1" 
+PRINT(".\Listings\流水灯LED20210705_1.m51") RAMSIZE(256) 

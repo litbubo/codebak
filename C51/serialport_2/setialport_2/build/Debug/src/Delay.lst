@@ -1,0 +1,96 @@
+C51 COMPILER V9.60.0.0   DELAY                                                             12/30/2021 20:49:29 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE DELAY
+OBJECT MODULE PLACED IN .\build\Debug\src\Delay.o
+COMPILER INVOKED BY: C:\Software\Keil_v5\C51\BIN\C51.exe .\SRC\DELAY.C PRINT(.\build\Debug\src\Delay.lst) OMF2 TABS(4) C
+                    -ODE NOCOND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(c:\Software\Keil_v5\C51\INC;c:\Software\Keil_v5\C51\INC\STC
+                    -;C:\Software\Keil_v5\C51\INC;.\src) DEFINE(__UVISION_VERSION=526) OBJECT(.\build\Debug\src\Delay.o)
+
+line level    source
+
+   1          #include "Delay.h"
+   2          
+   3          void Delayms(unsigned int time) //@12.000MHz
+   4          {
+   5   1          unsigned char i, j;
+   6   1      
+   7   1          while (time--)
+   8   1          {
+   9   2              /* code */
+  10   2              i = 2;
+  11   2              j = 239;
+  12   2              do
+  13   2              {
+  14   3                  while (--j)
+  15   3                      ;
+  16   3              } while (--i);
+  17   2          }
+  18   1      }
+C51 COMPILER V9.60.0.0   DELAY                                                             12/30/2021 20:49:29 PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION _Delayms (BEGIN)
+                                           ; SOURCE LINE # 3
+;---- Variable 'time' assigned to Register 'R6/R7' ----
+                                           ; SOURCE LINE # 4
+0000         ?C0001:
+                                           ; SOURCE LINE # 7
+0000 EF                MOV     A,R7
+0001 1F                DEC     R7
+0002 AC06              MOV     R4,AR6
+0004 7001              JNZ     ?C0009
+0006 1E                DEC     R6
+0007         ?C0009:
+0007 4C                ORL     A,R4
+0008 600A              JZ      ?C0008
+                                           ; SOURCE LINE # 8
+                                           ; SOURCE LINE # 10
+;---- Variable 'i' assigned to Register 'R5' ----
+000A 7D02              MOV     R5,#02H
+                                           ; SOURCE LINE # 11
+;---- Variable 'j' assigned to Register 'R4' ----
+000C 7CEF              MOV     R4,#0EFH
+                                           ; SOURCE LINE # 13
+000E         ?C0006:
+                                           ; SOURCE LINE # 14
+000E DCFE              DJNZ    R4,?C0006
+                                           ; SOURCE LINE # 16
+0010 DDFC              DJNZ    R5,?C0006
+                                           ; SOURCE LINE # 17
+0012 80EC              SJMP    ?C0001
+                                           ; SOURCE LINE # 18
+0014         ?C0008:
+0014 22                RET     
+             ; FUNCTION _Delayms (END)
+
+C51 COMPILER V9.60.0.0   DELAY                                                             12/30/2021 20:49:29 PAGE 3   
+
+NAME                                    CLASS   MSPACE  TYPE    OFFSET  SIZE
+====                                    =====   ======  ====    ======  ====
+
+
+_Delayms . . . . . . . . . . . . . . .  PUBLIC   CODE   PROC     0000H  -----
+  time . . . . . . . . . . . . . . . .  * REG *  DATA   U_INT    0006H  2
+  i. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0005H  1
+  j. . . . . . . . . . . . . . . . . .  * REG *  DATA   U_CHAR   0004H  1
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     21    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

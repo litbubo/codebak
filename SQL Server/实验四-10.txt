@@ -1,0 +1,3 @@
+SELECT *
+FROM INFO_Stu03001
+WHERE Sdept = '信息学院';

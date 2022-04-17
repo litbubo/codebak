@@ -1,0 +1,3 @@
+D:/Programming exercises/C++/C++ 11exercise/1_Original literal/build/CMakeFiles/main.dir
+D:/Programming exercises/C++/C++ 11exercise/1_Original literal/build/CMakeFiles/edit_cache.dir
+D:/Programming exercises/C++/C++ 11exercise/1_Original literal/build/CMakeFiles/rebuild_cache.dir

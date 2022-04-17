@@ -1,0 +1,22 @@
+|timekeep
+CLK => TIMEOUT~reg0.CLK
+CLK1 => TIMEOUT~reg0.DATAIN
+M0[0] => Equal0.IN7
+M0[1] => Equal0.IN6
+M0[2] => Equal0.IN5
+M0[3] => Equal0.IN4
+M1[0] => Equal1.IN7
+M1[1] => Equal1.IN6
+M1[2] => Equal1.IN5
+M1[3] => Equal1.IN4
+S0[0] => Equal2.IN7
+S0[1] => Equal2.IN6
+S0[2] => Equal2.IN5
+S0[3] => Equal2.IN4
+S1[0] => Equal3.IN7
+S1[1] => Equal3.IN6
+S1[2] => Equal3.IN5
+S1[3] => Equal3.IN4
+TIMEOUT <= TIMEOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

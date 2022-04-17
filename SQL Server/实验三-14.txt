@@ -1,0 +1,5 @@
+DELETE
+FROM SC
+WHERE Sno IN SELECT(	SELECT Sno
+											FROM Student
+											WHERE Sdept = '机械学院');

@@ -1,0 +1,5 @@
+CREATE VIEW IS_GIRL(Sno, Sname, Sage, Sdept)
+AS
+SELECT Sno, Sname, Sage, Sdept
+FROM Student
+WHERE Ssex = '女';

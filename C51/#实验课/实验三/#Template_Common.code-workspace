@@ -1,0 +1,26 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            ".eideignore": "ignore"
+        },
+        "C_Cpp.default.intelliSenseMode": "gcc-arm",
+        "files.autoGuessEncoding": true,
+        "C_Cpp.default.cppStandard": "c++14",
+        "C_Cpp.default.cStandard": "c99",
+        "C_Cpp.errorSquiggles": "Disabled"
+    },
+    "extensions": {
+        "recommendations": [
+            "cl.eide",
+            "keroc.hex-fmt",
+            "hars.cppsnippets",
+            "zixuanwang.linkerscript",
+            "cl.stm8-debug"
+        ]
+    }
+}

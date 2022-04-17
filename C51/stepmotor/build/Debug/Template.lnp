@@ -1,0 +1,3 @@
+
+.\build\Debug\main.o TO .\build\Debug\Template
+PRINT(.\build\Debug\Template.map) REMOVEUNUSED

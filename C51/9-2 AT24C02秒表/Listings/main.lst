@@ -1,0 +1,144 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              08/12/2021 09:31:59 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Software\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\List
+                    -ings\main.lst) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <STC89C5xRC.H>
+   2          #include <INTRINS.H>
+   3          #include "Timer.h"
+   4          #include "Key.h"
+   5          #include "Nixie.h"
+   6          #include "AT24C02.h"
+   7          #include "Delayms.h"
+   8          
+   9          unsigned char seclo = 0, sec = 0, min = 0;
+  10          unsigned char i = 0, j = 0;
+  11          bit Runflag = 0;
+  12          
+  13          void SecLoop()
+  14          {
+  15   1          if(Runflag == 1)
+  16   1          {
+  17   2              seclo++;
+  18   2              if(seclo >= 100)
+  19   2              {
+  20   3                  seclo = 0;
+  21   3                  sec++;
+  22   3                  if(sec >= 60)
+  23   3                  {
+  24   4                      sec = 0;
+  25   4                      min++;
+  26   4                      if(min >= 60)
+  27   4                      {
+  28   5                          min = 0;
+  29   5                      }
+  30   4                  }
+  31   3              }
+  32   2          }
+  33   1      }
+  34          
+  35          int main()
+  36          {
+  37   1          unsigned char key = 0;
+  38   1          Timer0_Init();
+  39   1      
+  40   1          while (1)
+  41   1          {
+  42   2              key = Key();
+  43   2      
+  44   2              if(key == 1)
+  45   2              {
+  46   3                  Runflag =! Runflag;
+  47   3              }
+  48   2      
+  49   2              if(key == 2)
+  50   2              {
+  51   3                  Runflag = 0;
+  52   3                  seclo = 0;
+  53   3                  sec = 0;
+  54   3                  min = 0;
+C51 COMPILER V9.60.0.0   MAIN                                                              08/12/2021 09:31:59 PAGE 2   
+
+  55   3                              i = 0;
+  56   3                              j = 0;
+  57   3                              
+  58   3              }
+  59   2                      if(key == 3)
+  60   2              {
+  61   3                  AT24C02_WriteByte(i + 1, seclo);
+  62   3                              Delayms(5);
+  63   3                              AT24C02_WriteByte(i + 2, sec);
+  64   3                              Delayms(5);
+  65   3                              AT24C02_WriteByte(i + 3, min);
+  66   3                              Delayms(5);
+  67   3                              i += 3;
+  68   3                              if(i > 12)
+  69   3                                      i = 0;
+  70   3              }
+  71   2                      if(key == 4)
+  72   2              {
+  73   3                  seclo = AT24C02_ReadByte(j + 1);
+  74   3                              sec = AT24C02_ReadByte( j + 2);
+  75   3                              min = AT24C02_ReadByte(j + 3);
+  76   3                              j += 3;
+  77   3                              if (j > 12)
+  78   3                                      j = 0;
+  79   3              }
+  80   2              SetNixie(1, min/10);
+  81   2              SetNixie(2, min%10);
+  82   2              SetNixie(3, 11);
+  83   2              SetNixie(4, sec/10);
+  84   2              SetNixie(5, sec%10);
+  85   2              SetNixie(6, 11);
+  86   2              SetNixie(7, seclo/10);
+  87   2              SetNixie(8, seclo%10);
+  88   2          }
+  89   1          return 0;
+  90   1      }
+  91          
+  92          void Timer0() interrupt 1
+  93          {
+  94   1          static int count0 = 0, count1 = 0, count2 = 0;
+  95   1          TH0 = (65536 - 1000) / 256;
+  96   1          TL0 = (65536 - 1000) % 256;
+  97   1          count0++;
+  98   1          count1++;
+  99   1          count2++;
+ 100   1          if (count0 >= 20)
+ 101   1          {
+ 102   2              count0 = 0;
+ 103   2              KeyLoop();
+ 104   2          }
+ 105   1          if (count1 >= 2)
+ 106   1          {
+ 107   2              count1 = 0;
+ 108   2              NixieLoop();
+ 109   2          }
+ 110   1          if (count2 >= 10)
+ 111   1          {
+ 112   2              count2 = 0;
+ 113   2              SecLoop();
+ 114   2          }
+ 115   1      }
+*** WARNING C294 IN LINE 89 OF main.c: unreachable code
+C51 COMPILER V9.60.0.0   MAIN                                                              08/12/2021 09:31:59 PAGE 3   
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    459    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     11       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

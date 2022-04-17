@@ -1,0 +1,35 @@
+#include <STC89C5xRC.H>
+#include <INTRINS.H>
+
+void Delay20ms()		//@11.0592MHz
+{
+    unsigned char i, j, k;
+
+    _nop_();
+    _nop_();
+    i = 1;
+    j = 216;
+    k = 35;
+    do
+    {
+        do
+        {
+            while (--k);
+        } while (--j);
+    } while (--i);
+}
+
+
+void main()
+{
+    while (1)
+    {
+        if ( P33 == 0)
+        {
+            Delay20ms();
+            while ( P33 == 0) ;
+            P20 = 0;
+        }
+    }
+	return ;
+}

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/cherish-ball.png</file>
+        <file>image/down.png</file>
+        <file>image/great-ball.png</file>
+        <file>image/up.png</file>
+    </qresource>
+</RCC>

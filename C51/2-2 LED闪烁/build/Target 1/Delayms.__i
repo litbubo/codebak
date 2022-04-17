@@ -1,0 +1,1 @@
+.\Delayms.c PRINT(".\build\Target 1\Delayms.lst") OMF2 TABS(4) CODE NOCOND SYMBOLS OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(C:\Software\Keil_v5\C51\INC\STC;c:\Software\Keil_v5\C51\INC\Atmel;C:\Software\Keil_v5\C51\INC) DEFINE(__UVISION_VERSION='526') OBJECT(".\build\Target 1\Delayms.o")

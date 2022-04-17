@@ -1,0 +1,6 @@
+SELECT
+	Sname 
+FROM
+	Student 
+WHERE
+	Sdept = '信息学院'

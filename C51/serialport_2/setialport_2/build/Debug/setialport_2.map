@@ -1,0 +1,132 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          12/30/2021  20:49:30  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+C:\SOFTWARE\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\DEBUG\SRC\DELAY.O, .\BUILD\DEBUG\SRC\MAIN.O TO .\BUILD\DEBUG\SETIALPORT_2 P
+>> RINT (.\build\Debug\setialport_2.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\DEBUG\SRC\DELAY.O (DELAY)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\BUILD\DEBUG\SRC\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  C:\SOFTWARE\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\DEBUG\SETIALPORT_2 (DELAY)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000057H   CODE
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\DEBUG\SETIALPORT_2 (DELAY)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000021H   00001FH   BYTE   UNIT     CODE           ?PR?SERIALPORT_INIT?MAIN
+000022H   000022H   000001H   ---    ---      **GAP**
+000023H   000025H   000003H   BYTE   OFFS..   CODE           ?MAIN?00023
+000026H   00003BH   000016H   BYTE   UNIT     CODE           ?PR?READDATA?MAIN
+00003CH   000047H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000048H   000052H   00000BH   BYTE   UNIT     CODE           ?PR?_SENDDATA?MAIN
+000053H   000057H   000005H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+
+* * * * * * * * *   R E M O V E D     S E G M E N T S   * * * * * * * *
+   *DEL*:           000015H   BYTE   UNIT     CODE           ?PR?_DELAYMS?DELAY
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\DEBUG\SETIALPORT_2 (DELAY)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+READDATA/MAIN               ----- -----  ----- -----
+  +--> _SENDDATA/MAIN
+
+_SENDDATA/MAIN              ----- -----  ----- -----
+
+*** NEW ROOT **************
+
+?C_C51STARTUP               ----- -----  ----- -----
+LX51 LINKER/LOCATER V4.66.97.0                                                        12/30/2021  20:49:30  PAGE 2
+
+
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> SERIALPORT_INIT/MAIN
+
+SERIALPORT_INIT/MAIN        ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\DEBUG\SETIALPORT_2 (DELAY)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000053H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+*DEL*:00000000H   CODE     ---       _Delayms
+      01000048H   CODE     ---       _SendData
+      01000053H   CODE     ---       main
+      01000026H   CODE     ---       ReadData
+      01000003H   CODE     ---       Serialport_Init
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\DEBUG\SETIALPORT_2 (DELAY)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       DELAY
+      00000005H   SYMBOL    DATA     VOID      i
+      00000004H   SYMBOL    DATA     VOID      j
+
+      ---         MODULE    ---      ---       MAIN
+      01000053H   PUBLIC    CODE     ---       main
+      01000026H   PUBLIC    CODE     ---       ReadData
+      01000048H   PUBLIC    CODE     ---       _SendData
+      01000003H   PUBLIC    CODE     ---       Serialport_Init
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000048H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000026H   BLOCK     CODE     ---       LVL=0
+      0100002DH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      temp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000053H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=9.0 xdata=0 const=0 code=87
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

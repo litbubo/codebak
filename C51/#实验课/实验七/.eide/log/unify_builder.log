@@ -1,0 +1,51 @@
+[2021-11-21 18:41:31]	[done]
+	build successfully !
+
+[2021-11-21 18:42:28]	[done]
+	build successfully !
+
+[2021-11-21 18:42:52]	[done]
+	build successfully !
+
+[2021-11-21 18:50:41]	[done]
+	build successfully !
+
+[2021-11-21 18:51:18]	[done]
+	build successfully !
+
+[2021-11-21 18:53:50]	[done]
+	build successfully !
+
+[2021-11-21 19:00:42]	[done]
+	build successfully !
+
+[2021-11-21 19:01:25]	[done]
+	build successfully !
+
+[2021-11-21 19:08:17]	compilation failed at : "c:\Users\imxlp\Desktop\#Template_Common\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-21 19:08:29]	[done]
+	build successfully !
+
+[2021-11-21 19:09:50]	[done]
+	build successfully !
+
+[2021-11-21 19:12:40]	[done]
+	build successfully !
+
+[2021-11-21 19:14:15]	[done]
+	build successfully !
+
+[2021-11-21 20:06:19]	compilation failed at : "c:\Users\imxlp\Desktop\#Template_Common\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-21 20:06:52]	compilation failed at : "c:\Users\imxlp\Desktop\#Template_Common\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-21 20:07:12]	[done]
+	build successfully !
+
+[2021-11-21 20:18:36]	compilation failed at : "e:\2021-2022 第一学期\51实验代码\实验七\LCD1602.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0116f] in <881485cd164b4f5a918f957d29d55652>:0 
+

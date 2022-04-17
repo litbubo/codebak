@@ -1,0 +1,9 @@
+".\Objects\STARTUP.obj",
+".\Objects\ADXL345.obj",
+".\Objects\delay.obj",
+".\Objects\IIC.obj",
+".\Objects\main.obj",
+".\Objects\oled.obj" 
+TO ".\Objects\project" 
+PRINT(".\Listings\project.m51") RAMSIZE(256) 
+DISABLEWARNING (16) 

@@ -1,0 +1,3 @@
+INSERT 
+INTO INFO_Stu
+VALUES ('1903070103', '李秋', '20', '女', '信息学院');

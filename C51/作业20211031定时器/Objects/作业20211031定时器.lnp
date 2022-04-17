@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj" 
+TO ".\Objects\作业20211031定时器" 
+PRINT(".\Listings\作业20211031定时器.m51") RAMSIZE(256) 

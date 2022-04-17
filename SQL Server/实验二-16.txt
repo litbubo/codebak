@@ -1,0 +1,3 @@
+SELECT MAX(Grade)
+FROM SC
+WHERE Cno = '03001';

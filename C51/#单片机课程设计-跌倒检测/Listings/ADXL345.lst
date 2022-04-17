@@ -1,0 +1,71 @@
+C51 COMPILER V9.60.0.0   ADXL345                                                           12/11/2021 12:15:02 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE ADXL345
+OBJECT MODULE PLACED IN .\Objects\ADXL345.obj
+COMPILER INVOKED BY: C:\Software\Keil_v5\C51\BIN\C51.EXE ADXL345.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\L
+                    -istings\ADXL345.lst) OBJECT(.\Objects\ADXL345.obj)
+
+line level    source
+
+   1          #include "IIC.h"
+   2          #include "delay.h"
+   3          #include "ADXL345.h"
+   4          
+   5          #define SlaveAddress 0xA6
+   6          
+   7          uchar BUF[8];
+   8          uchar ge, shi, bai, qian, wan;
+   9          int dis_data;
+  10          
+  11          //连续读出ADXL345内部加速度数据，地址范围0x32~0x37
+  12          void Multiple_read_ADXL345(void)
+  13          {
+  14   1          uchar i;
+  15   1          IIC_Start();                    //起始信号
+  16   1          IIC_SendByte(SlaveAddress);     //发送设备地址+写信号
+  17   1          IIC_SendByte(0x32);             //发送存储单元地址，从0x32开始
+  18   1          IIC_Start();                    //起始信号
+  19   1          IIC_SendByte(SlaveAddress + 1); //发送设备地址+读信号
+  20   1          for (i = 0; i < 6; i++)         //连续读取6个地址数据，存储中BUF
+  21   1          {
+  22   2              BUF[i] = IIC_RecvByte(); //BUF[0]存储0x32地址中的数据
+  23   2              if (i == 5)
+  24   2              {
+  25   3                  IIC_SendACK(1); //最后一个数据需要回NOACK
+  26   3              }
+  27   2              else
+  28   2              {
+  29   3                  IIC_SendACK(0); //回应ACK
+  30   3              }
+  31   2          }
+  32   1          IIC_Stop(); //停止信号
+  33   1          Delayms(5);
+  34   1      }
+  35          
+  36          void Init_ADXL345()
+  37          {
+  38   1          IIC_Write_Data(SlaveAddress, 0x31, 0x0B); //测量范围,正负16g，13位模式
+  39   1          IIC_Write_Data(SlaveAddress, 0x2C, 0x08); //速率设定为12.5 参考pdf13页
+  40   1          IIC_Write_Data(SlaveAddress, 0x2D, 0x08); //选择电源模式   参考pdf24页
+  41   1          IIC_Write_Data(SlaveAddress, 0x2E, 0x80); //使能 DATA_READY 中断
+  42   1          IIC_Write_Data(SlaveAddress, 0x1E, 0x00); //X 偏移量 根据测试传感器的状态写入pdf29页
+  43   1          IIC_Write_Data(SlaveAddress, 0x1F, 0x00); //Y 偏移量 根据测试传感器的状态写入pdf29页
+  44   1          IIC_Write_Data(SlaveAddress, 0x20, 0x05); //Z 偏移量 根据测试传感器的状态写入pdf29页
+  45   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    137    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     15       1
+   IDATA SIZE       =   ----    ----
+C51 COMPILER V9.60.0.0   ADXL345                                                           12/11/2021 12:15:02 PAGE 2   
+
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

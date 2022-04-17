@@ -1,0 +1,5 @@
+CREATE VIEW IS_AG(Sno, Gavg)
+AS
+SELECT Sno, AVG(Grade)
+FROM SC
+GROUP BY Sno

@@ -1,0 +1,51 @@
+[2021-08-07 11:02:40]	[done]
+	build successfully !
+
+[2021-08-07 11:20:27]	compilation failed at : "d:\Programming exercises\C51\2-2 LED闪烁\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:20:42]	[done]
+	build successfully !
+
+[2021-08-07 11:24:08]	[done]
+	build successfully !
+
+[2021-08-07 11:26:03]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0127b] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:26:57]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0127b] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:27:12]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0127b] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:28:43]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0127b] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:29:20]	[done]
+	build successfully !
+
+[2021-08-07 11:30:09]	[done]
+	build successfully !
+
+[2021-08-07 11:30:30]	compilation failed at : "d:\Programming exercises\C51\2-2 LED闪烁\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:30:41]	compilation failed at : "d:\Programming exercises\C51\2-2 LED闪烁\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:31:14]	compilation failed at : "d:\Programming exercises\C51\2-2 LED闪烁\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:31:39]	link failed !, exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0127b] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:31:48]	[done]
+	build successfully !
+
+[2021-08-07 11:32:23]	compilation failed at : "d:\Programming exercises\C51\2-2 LED闪烁\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 11:32:46]	[done]
+	build successfully !
+

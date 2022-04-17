@@ -1,0 +1,6 @@
+CREATE TABLE Sdept_Age ( Sdept CHAR ( 20 ), Avg_Age NUMERIC ( 2 ), );
+
+INSERT INTO Sdept_Age ( Sdept, Avg_Age ) 
+SELECT Sdept, AVG ( Sage ) 
+FROM Student 
+GROUP BY Sdept;

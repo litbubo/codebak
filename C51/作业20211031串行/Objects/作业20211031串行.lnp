@@ -1,0 +1,3 @@
+".\Objects\main.obj" 
+TO ".\Objects\作业20211031串行" 
+PRINT(".\Listings\作业20211031串行.m51") RAMSIZE(256) 

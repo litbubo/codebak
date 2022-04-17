@@ -1,0 +1,7 @@
+D:\Programming exercises\C#\exercise20210705_2\bin\Debug\exercise20210705_2.exe.config
+D:\Programming exercises\C#\exercise20210705_2\bin\Debug\exercise20210705_2.exe
+D:\Programming exercises\C#\exercise20210705_2\bin\Debug\exercise20210705_2.pdb
+D:\Programming exercises\C#\exercise20210705_2\obj\Debug\exercise20210705_2.csproj.AssemblyReference.cache
+D:\Programming exercises\C#\exercise20210705_2\obj\Debug\exercise20210705_2.csproj.CoreCompileInputs.cache
+D:\Programming exercises\C#\exercise20210705_2\obj\Debug\exercise20210705_2.exe
+D:\Programming exercises\C#\exercise20210705_2\obj\Debug\exercise20210705_2.pdb

@@ -1,0 +1,5 @@
+CREATE VIEW INFO_Stu03001
+AS
+SELECT Student.Sno, Sname, Sdept
+FROM Student, SC
+WHERE Student.Sno = SC.Sno AND SC.Cno = '03001';

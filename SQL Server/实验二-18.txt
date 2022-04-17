@@ -1,0 +1,4 @@
+SELECT Sno, SUM(Ccredit)
+FROM SC, Course
+WHERE SC.Cno = Course.Cno
+GROUP BY Sno;

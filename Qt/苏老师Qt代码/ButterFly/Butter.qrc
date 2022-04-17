@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/cherish-ball.png</file>
+        <file alias="2">image/down.png</file>
+        <file>image/great-ball.png</file>
+        <file alias="1">image/up.png</file>
+        <file>image/Red Butterfly.ico</file>
+    </qresource>
+</RCC>

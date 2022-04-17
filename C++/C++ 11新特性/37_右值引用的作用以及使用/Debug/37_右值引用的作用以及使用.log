@@ -1,0 +1,3 @@
+﻿  37_右值引用的作用以及使用.cpp
+D:\Programming exercises\C++\C++ 11exercise\37_右值引用的作用以及使用\37_右值引用的作用以及使用.cpp(45): warning C4172: 返回局部变量或临时变量的地址
+  37_右值引用的作用以及使用.vcxproj -> D:\Programming exercises\C++\C++ 11exercise\37_右值引用的作用以及使用\Debug\37_右值引用的作用以及使用.exe

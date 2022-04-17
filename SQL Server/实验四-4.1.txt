@@ -1,0 +1,5 @@
+CREATE VIEW IS_G(IS_Sno, IS_Sname, IS_Cno, IS_Cname, IS_Grade)
+AS
+SELECT Student.Sno, Student.Sname, Course.Cno, Course.Cname, Grade
+FROM Student, Course, SC
+WHERE Student.Sno = SC.Sno AND SC.Cno = Course.Cno AND Student.Sdept = '信息学院';

@@ -1,0 +1,3 @@
+SELECT Sno, Sname
+FROM Student
+WHERE Sname LIKE '_艺%';

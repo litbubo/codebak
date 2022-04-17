@@ -1,0 +1,121 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          11/21/2021  18:53:50  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+C:\SOFTWARE\KEIL_V5\C51\BIN\LX51.EXE .\build\Target 1\main.o, .\build\Target 1\STARTUP.o TO .\build\Target 1\#Template_C
+>> ommon PRINT (.\build\Target 1\#Template_Common.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\build\Target 1\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\STARTUP.o (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   00002AH   CODE
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000005H   000003H   BYTE   OFFS..   CODE           ?MAIN?00003
+000006H   000011H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000012H   000012H   000001H   ---    ---      **GAP**
+000013H   000015H   000003H   BYTE   OFFS..   CODE           ?MAIN?00013
+000016H   00001FH   00000AH   BYTE   UNIT     CODE           ?PR?KEY_INIT?MAIN
+000020H   000024H   000005H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000025H   000027H   000003H   BYTE   UNIT     CODE           ?PR?KEY1_INTER?MAIN
+000028H   00002AH   000003H   BYTE   UNIT     CODE           ?PR?KEY2_INTER?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\build\Target 1\#Template_Common (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+KEY1_INTER/MAIN             ----- -----  ----- -----
+
+*** NEW ROOT **************
+
+KEY2_INTER/MAIN             ----- -----  ----- -----
+
+*** NEW ROOT **************
+
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/21/2021  18:53:50  PAGE 2
+
+
+  +--> KEY_INIT/MAIN
+
+KEY_INIT/MAIN               ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000020H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000025H   CODE     ---       Key1_Inter
+      01000028H   CODE     ---       Key2_Inter
+      01000016H   CODE     ---       Key_Init
+      01000020H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      01000020H   PUBLIC    CODE     ---       main
+      01000028H   PUBLIC    CODE     ---       Key2_Inter
+      01000025H   PUBLIC    CODE     ---       Key1_Inter
+      01000016H   PUBLIC    CODE     ---       Key_Init
+
+      01000016H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000025H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000028H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000020H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=9.0 xdata=0 const=0 code=42
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

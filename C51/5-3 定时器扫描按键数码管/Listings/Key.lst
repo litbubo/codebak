@@ -1,0 +1,87 @@
+C51 COMPILER V9.60.0.0   KEY                                                               08/12/2021 09:12:30 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE KEY
+OBJECT MODULE PLACED IN .\Objects\Key.obj
+COMPILER INVOKED BY: C:\Software\Keil_v5\C51\BIN\C51.EXE Key.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listi
+                    -ngs\Key.lst) OBJECT(.\Objects\Key.obj)
+
+line level    source
+
+   1          #include <STC89C5xRC.H>
+   2          
+   3          unsigned char KeyNumber = 0;
+   4          
+   5          unsigned char Key()
+   6          {
+   7   1          unsigned char temp = 0;
+   8   1          temp = KeyNumber;
+   9   1          KeyNumber = 0;
+  10   1          return temp;
+  11   1      }
+  12          
+  13          unsigned char KeyGet()
+  14          {
+  15   1          unsigned char KeyNum = 0;
+  16   1      
+  17   1          if(P31 == 0)
+  18   1          {
+  19   2              KeyNum = 1;
+  20   2          }
+  21   1      
+  22   1          if(P30 == 0)
+  23   1          {
+  24   2              KeyNum = 2;
+  25   2          }
+  26   1      
+  27   1          if(P32 == 0)
+  28   1          {
+  29   2              KeyNum = 3;
+  30   2          }
+  31   1      
+  32   1          if(P33 == 0)
+  33   1          {
+  34   2              KeyNum = 4;
+  35   2          }
+  36   1          return KeyNum;
+  37   1      }
+  38          
+  39          void KeyLoop()
+  40          {
+  41   1          static unsigned char LastNum = 0, NowNum = 0;
+  42   1          LastNum = NowNum;
+  43   1          NowNum = KeyGet();
+  44   1      
+  45   1          if (LastNum == 0 && NowNum == 1)
+  46   1          {
+  47   2              KeyNumber = 1;
+  48   2          }
+  49   1          if (LastNum == 0 && NowNum == 2)
+  50   1          {
+  51   2              KeyNumber = 2;
+  52   2          }
+  53   1          if (LastNum == 0 && NowNum == 3)
+  54   1          {
+C51 COMPILER V9.60.0.0   KEY                                                               08/12/2021 09:12:30 PAGE 2   
+
+  55   2              KeyNumber = 3;
+  56   2          }
+  57   1          if (LastNum == 0 && NowNum == 4)
+  58   1          {
+  59   2              KeyNumber = 4;
+  60   2          }
+  61   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     92    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

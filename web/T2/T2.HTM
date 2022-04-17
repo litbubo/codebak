@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>1903070311第四次作业</title>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function check(form)
+        {
+            var username = form.username.value;
+            if(username.length==0)
+            {
+                alert("请填写用户名！");
+                form.username.focus();
+                return false;
+            }
+            var password = form.password.value;
+            if(password.length==0)
+            {
+                alert("请填写密码！");
+                form.password.focus();
+                return false;
+            }
+        }
+        //-->
+    </script>
+</head>
+
+<body>
+    <form action="T2.PHP" method="POST" enctype="multipart/form-data" onSubmit="return check(this);">
+        <p align="center">
+            <br>用户名 <input type="text" name="username" style="width: 300px;"><br>
+            <br>密&emsp;码 <input type="password" name="password" style="width: 300px;"><br>
+            <br>性&emsp;别
+            <select name="sex" id="" style="width: 308px;height: 22px;">
+                <option value="man">男</option>
+                <option value="woman">女</option>
+            </select><br>
+            <br>职&emsp;业
+            <select name="work" id="" style="width: 308px;height: 22px;">
+                <option value="student">学生</option>
+                <option value="teacher">教师</option>
+                <option value="worker">职员</option>
+            </select>
+            <br>
+            <br>爱&emsp;好 &emsp;
+            <label for="daze"><input type="checkbox" name="love[]" value="daze" id="daze">发呆</label>&emsp;
+            <label for="food"><input type="checkbox" name="love[]" value="food" id="food">美食</label>&emsp;
+            <label for="sport"><input type="checkbox" name="love[]" value="sport" id="sport">运动</label>&emsp;
+            <label for="sing"><input type="checkbox" name="love[]" value="sing" id="sing">唱歌</label>&emsp;
+            <br>
+            <br>偶&emsp;像&emsp;&emsp;&emsp;
+            <label for="true"><input type="radio" name="star" value="true" id="true">有</label>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="false"><input type="radio" name="star" value="false" id="false">无</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <br>
+            <br><input type="submit" value="提交">&emsp;&emsp;<input type="reset" value="重写"><br>
+        </p>
+    </form>
+</body>
+
+</html>

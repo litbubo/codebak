@@ -1,0 +1,10 @@
+D:\Users\imxlp\Desktop\实验1\1.2_Win\bin\Debug\1.2_Win.exe.config
+D:\Users\imxlp\Desktop\实验1\1.2_Win\bin\Debug\1.2_Win.exe
+D:\Users\imxlp\Desktop\实验1\1.2_Win\bin\Debug\1.2_Win.pdb
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\1.2_Win.csproj.AssemblyReference.cache
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\_1._2_Win.Form1.resources
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\_1._2_Win.Properties.Resources.resources
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\1.2_Win.csproj.GenerateResource.cache
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\1.2_Win.csproj.CoreCompileInputs.cache
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\1.2_Win.exe
+D:\Users\imxlp\Desktop\实验1\1.2_Win\obj\Debug\1.2_Win.pdb

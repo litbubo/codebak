@@ -1,0 +1,9 @@
+D:\Users\imxlp\Desktop\实验3\3.6\bin\Debug\3.6.exe.config
+D:\Users\imxlp\Desktop\实验3\3.6\bin\Debug\3.6.exe
+D:\Users\imxlp\Desktop\实验3\3.6\bin\Debug\3.6.pdb
+D:\Users\imxlp\Desktop\实验3\3.6\obj\Debug\_3._6.Form1.resources
+D:\Users\imxlp\Desktop\实验3\3.6\obj\Debug\_3._6.Properties.Resources.resources
+D:\Users\imxlp\Desktop\实验3\3.6\obj\Debug\3.6.csproj.GenerateResource.cache
+D:\Users\imxlp\Desktop\实验3\3.6\obj\Debug\3.6.csproj.CoreCompileInputs.cache
+D:\Users\imxlp\Desktop\实验3\3.6\obj\Debug\3.6.exe
+D:\Users\imxlp\Desktop\实验3\3.6\obj\Debug\3.6.pdb

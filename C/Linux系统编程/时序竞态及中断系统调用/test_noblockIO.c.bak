@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+
+#define FIFO "fifo.txt"
+
+int main(int argc, char **argv)
+{
+    int fd = open(FIFO, O_RDONLY);
+    if (fd < 0)
+    {
+        perror("open");
+        exit(1);
+    }
+    int fd_flags = fcntl(fd, F_GETFL);
+    fcntl(fd, F_SETFL, fd_flags | O_NONBLOCK);
+    write(STDOUT_FILENO, "open fifo success\n", sizeof("open fifo success\n"));
+
+    char buf[1024];
+    memset(buf, 0, sizeof(buf));
+
+    while (1)
+    {
+        int len = read(fd, buf, sizeof(buf));
+        if (len == 0)
+        {
+            write(STDOUT_FILENO, "end\n", 4);
+            break;
+        }
+        else if(len < 0 && errno == EAGAIN)
+        {
+            write(STDOUT_FILENO, "EAGAIN\n", 7);
+            sleep(1);
+            continue;
+        }
+        write(STDOUT_FILENO, buf, len);
+    }
+    close(fd);
+    unlink(FIFO);
+
+    exit(0);
+}

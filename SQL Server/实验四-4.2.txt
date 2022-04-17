@@ -1,0 +1,5 @@
+CREATE VIEW IS_G90_C1(Sno, Sname, Grade)
+AS
+SELECT IS_Sno, IS_Sname, IS_Grade
+FROM IS_G
+WHERE IS_Cno = '03001' AND IS_Grade > 80;

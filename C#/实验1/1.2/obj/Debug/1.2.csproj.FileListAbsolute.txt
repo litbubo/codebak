@@ -1,0 +1,6 @@
+D:\Users\imxlp\Desktop\实验1\1.2\bin\Debug\1.2.exe.config
+D:\Users\imxlp\Desktop\实验1\1.2\bin\Debug\1.2.exe
+D:\Users\imxlp\Desktop\实验1\1.2\bin\Debug\1.2.pdb
+D:\Users\imxlp\Desktop\实验1\1.2\obj\Debug\1.2.csproj.CoreCompileInputs.cache
+D:\Users\imxlp\Desktop\实验1\1.2\obj\Debug\1.2.exe
+D:\Users\imxlp\Desktop\实验1\1.2\obj\Debug\1.2.pdb

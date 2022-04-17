@@ -1,0 +1,3 @@
+
+.\build\Debug\main.o TO .\build\Debug\serialport
+PRINT(.\build\Debug\serialport.map) REMOVEUNUSED

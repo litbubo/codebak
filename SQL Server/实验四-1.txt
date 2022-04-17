@@ -1,0 +1,5 @@
+CREATE VIEW INFO_Stu
+AS
+SELECT *
+FROM Student
+WHERE Sdept = '信息学院';

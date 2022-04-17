@@ -1,0 +1,294 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          11/14/2021  21:09:30  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+C:\SOFTWARE\KEIL_V5\C51\BIN\LX51.EXE .\build\Target 1\main.o, .\build\Target 1\STARTUP.o TO .\build\Target 1\#Template_C
+>> ommon PRINT (.\build\Target 1\#Template_Common.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\build\Target 1\main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  .\build\Target 1\STARTUP.o (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0000BBH   CODE
+C:000000H   C:000000H   C:00FFFFH   000016H   CONST
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   0000AEH   0000ACH   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0000AFH   0000BAH   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+0000BBH   0000D0H   000016H   BYTE   UNIT     CONST          ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\build\Target 1\#Template_Common (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      *EXTERN*    DATA     BYTE      ?_LCD_ShowNum?BYTE
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000003H   CODE     ---       ?C_START
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/14/2021  21:09:30  PAGE 2
+
+
+      01000000H   CODE     ---       ?C_STARTUP
+      *EXTERN*    CODE     ---       _LCD_ShowNum
+      *EXTERN*    CODE     ---       _LCD_ShowString
+      *EXTERN*    CODE     ---       DS1302_Init
+      *EXTERN*    CODE     ---       DS1302_ReadTime
+      *EXTERN*    CODE     ---       DS1302_SetTime
+      *EXTERN*    DATA     ---       DS1302_Time
+      *EXTERN*    CODE     ---       LCD_Init
+      01000003H   CODE     ---       main
+
+
+
+UNRESOLVED EXTERNAL SYMBOLS:
+   ?_LCD_ShowNum?BYTE
+   _LCD_ShowNum
+   _LCD_ShowString
+   DS1302_Init
+   DS1302_ReadTime
+   DS1302_SetTime
+   DS1302_Time
+   LCD_Init
+
+
+
+SYMBOL TABLE OF MODULE:  .\build\Target 1\#Template_Common (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      01000003H   PUBLIC    CODE     ---       main
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DS1302_SetTime
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  LCD_Init
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DS1302_ReadTime
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCD_ShowString
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/14/2021  21:09:30  PAGE 3
+
+
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L127: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DS1302_Init
+    MODULE:  .\build\Target 1\main.o (MAIN)
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  LCD_Init
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000004H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Init
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000007H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowString
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000014H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowString
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000021H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowString
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100002EH
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_SetTime
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000031H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_ReadTime
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000034H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000037H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100003EH
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000045H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000048H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100004FH
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/14/2021  21:09:30  PAGE 4
+
+
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000056H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000059H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000060H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000067H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100006AH
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000071H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000078H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100007BH
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000082H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000089H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100008CH
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 1000093H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100009AH
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/14/2021  21:09:30  PAGE 5
+
+
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DS1302_Time
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 100009DH
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?_LCD_ShowNum?BYTE
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 10000A4H
+
+*** ERROR L128: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCD_ShowNum
+    MODULE:  .\build\Target 1\main.o (MAIN)
+    ADDRESS: 10000ABH
+
+Program Size: data=9.0 xdata=0 const=22 code=187
+LX51 RUN COMPLETE.  0 WARNING(S),  36 ERROR(S)

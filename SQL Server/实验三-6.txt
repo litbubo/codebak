@@ -1,0 +1,3 @@
+INSERT
+INTO Student( Sno, Sname, Ssex, Sdept, Sage )
+VALUES ('1903070312', '周礼', '男', '信息学院', 20);

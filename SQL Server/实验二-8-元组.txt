@@ -1,0 +1,3 @@
+SELECT Sname, Ssex
+FROM Student
+WHERE Sdept NOT IN ('信息学院','理学院','经贸学院');

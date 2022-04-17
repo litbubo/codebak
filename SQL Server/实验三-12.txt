@@ -1,0 +1,6 @@
+UPDATE SC
+SET Grade = 0
+WHERE Sno IN (	SELECT Sno
+								FROM Student
+								WHERE Sdept = '机械学院'
+							);

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "47_独占的智能指针unique_ptr的删除器", "47_独占的智能指针unique_ptr的删除器.vcxproj", "{FC750938-C05A-463E-8819-5449B24DC08E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Debug|x64.ActiveCfg = Debug|x64
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Debug|x64.Build.0 = Debug|x64
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Debug|x86.ActiveCfg = Debug|Win32
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Debug|x86.Build.0 = Debug|Win32
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Release|x64.ActiveCfg = Release|x64
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Release|x64.Build.0 = Release|x64
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Release|x86.ActiveCfg = Release|Win32
+		{FC750938-C05A-463E-8819-5449B24DC08E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A3F87CE-84B5-4236-9E9E-786884D1AE11}
+	EndGlobalSection
+EndGlobal

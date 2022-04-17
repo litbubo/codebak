@@ -1,0 +1,7 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj",
+".\Objects\Delayms.obj",
+".\Objects\LCD1602.obj",
+".\Objects\XPT2046.obj" 
+TO ".\Objects\Template" 
+PRINT(".\Listings\Template.m51") RAMSIZE(256) 

@@ -1,0 +1,7 @@
+D:\Users\imxlp\Desktop\实验2\2.4\bin\Debug\2.4.exe.config
+D:\Users\imxlp\Desktop\实验2\2.4\bin\Debug\2.4.exe
+D:\Users\imxlp\Desktop\实验2\2.4\bin\Debug\2.4.pdb
+D:\Users\imxlp\Desktop\实验2\2.4\obj\Debug\2.4.csproj.AssemblyReference.cache
+D:\Users\imxlp\Desktop\实验2\2.4\obj\Debug\2.4.csproj.CoreCompileInputs.cache
+D:\Users\imxlp\Desktop\实验2\2.4\obj\Debug\2.4.exe
+D:\Users\imxlp\Desktop\实验2\2.4\obj\Debug\2.4.pdb

@@ -1,0 +1,3 @@
+UPDATE INFO_Student
+SET Sname = '许连鹏'
+WHERE Sno = '1903070311';

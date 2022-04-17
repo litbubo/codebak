@@ -1,0 +1,10 @@
+C:\Users\imxlp\Desktop\4.4\bin\Debug\4.4.exe.config
+C:\Users\imxlp\Desktop\4.4\bin\Debug\4.4.exe
+C:\Users\imxlp\Desktop\4.4\bin\Debug\4.4.pdb
+C:\Users\imxlp\Desktop\4.4\obj\Debug\4.4.csproj.AssemblyReference.cache
+C:\Users\imxlp\Desktop\4.4\obj\Debug\_4._4.Form1.resources
+C:\Users\imxlp\Desktop\4.4\obj\Debug\_4._4.Properties.Resources.resources
+C:\Users\imxlp\Desktop\4.4\obj\Debug\4.4.csproj.GenerateResource.cache
+C:\Users\imxlp\Desktop\4.4\obj\Debug\4.4.csproj.CoreCompileInputs.cache
+C:\Users\imxlp\Desktop\4.4\obj\Debug\4.4.exe
+C:\Users\imxlp\Desktop\4.4\obj\Debug\4.4.pdb

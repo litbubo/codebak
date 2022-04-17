@@ -1,0 +1,1 @@
+.\STARTUP.A51 PRINT(.\build\Target 1\STARTUP.lst) SET(SMALL) OBJECT(.\build\Target 1\STARTUP.o) EP

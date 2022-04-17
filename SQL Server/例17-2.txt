@@ -1,0 +1,6 @@
+SELECT
+	Sno 学号, 
+	Sname 姓名,
+	2017-Sage 出生年月
+FROM
+	Student;

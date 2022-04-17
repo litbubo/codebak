@@ -1,0 +1,6 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj",
+".\Objects\Delayms.obj",
+".\Objects\Nixie.obj" 
+TO ".\Objects\Template" 
+PRINT(".\Listings\Template.m51") RAMSIZE(256) 

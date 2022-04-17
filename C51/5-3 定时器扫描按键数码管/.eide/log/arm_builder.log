@@ -1,0 +1,42 @@
+[2021-08-07 11:02:40]	[done]
+	build successfully !
+
+[2021-08-07 17:30:03]	compilation failed at : "d:\Programming exercises\C51\5-2 定时器中断\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 17:31:00]	[done]
+	build successfully !
+
+[2021-08-07 17:33:23]	[done]
+	build successfully !
+
+[2021-08-07 17:34:13]	[done]
+	build successfully !
+
+[2021-08-07 17:36:32]	[done]
+	build successfully !
+
+[2021-08-07 17:36:58]	[done]
+	build successfully !
+
+[2021-08-07 17:39:24]	compilation failed at : "d:\Programming exercises\C51\5-2 定时器中断\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 17:40:06]	compilation failed at : "d:\Programming exercises\C51\5-2 定时器中断\main.c", exit code: 2
+  at unify_builder.Program.Main (System.String[] args) [0x0111d] in <9b26f9d89171412e906be2920459dd57>:0 
+
+[2021-08-07 17:40:25]	[done]
+	build successfully !
+
+[2021-08-07 17:40:58]	[done]
+	build successfully !
+
+[2021-08-07 17:41:33]	[done]
+	build successfully !
+
+[2021-08-07 17:41:47]	[done]
+	build successfully !
+
+[2021-08-07 17:42:50]	[done]
+	build successfully !
+

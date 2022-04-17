@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/Programming exercises/C++/C++ 11exercise/1_Original literal/build",
+  "command": "C:\\Software\\Qt\\Qt5.12.12\\Tools\\mingw730_32\\bin\\i686-w64-mingw32-g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\src\\HelloWorld.obj -c \"D:\\Programming exercises\\C++\\C++ 11exercise\\1_Original literal\\src\\HelloWorld.cpp\"",
+  "file": "D:/Programming exercises/C++/C++ 11exercise/1_Original literal/src/HelloWorld.cpp"
+},
+{
+  "directory": "D:/Programming exercises/C++/C++ 11exercise/1_Original literal/build",
+  "command": "C:\\Software\\Qt\\Qt5.12.12\\Tools\\mingw730_32\\bin\\i686-w64-mingw32-g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\main.obj -c \"D:\\Programming exercises\\C++\\C++ 11exercise\\1_Original literal\\main.cpp\"",
+  "file": "D:/Programming exercises/C++/C++ 11exercise/1_Original literal/main.cpp"
+}
+]

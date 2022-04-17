@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/Snipaste_2021-05-11_09-33-43.png</file>
+        <file>image/Snipaste_2021-05-11_10-08-24.png</file>
+        <file>image/logo.png</file>
+        <file>image/Snipaste_2021-05-11_10-20-28.png</file>
+        <file>image/Snipaste_2021-05-11_10-22-00.png</file>
+        <file>image/Snipaste_2021-05-11_10-22-08.png</file>
+        <file>image/Snipaste_2021-05-11_10-22-15.png</file>
+        <file>image/Snipaste_2021-05-11_10-26-10.png</file>
+        <file>image/Snipaste_2021-05-11_19-42-49.png</file>
+    </qresource>
+</RCC>

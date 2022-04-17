@@ -1,0 +1,3 @@
+SELECT *
+FROM IS_AG
+WHERE Gavg > 80;

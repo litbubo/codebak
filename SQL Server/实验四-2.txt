@@ -1,0 +1,6 @@
+CREATE VIEW INFO_Student
+AS
+SELECT *
+FROM Student
+WHERE Sdept = '信息学院'
+WITH CHECK OPTION;

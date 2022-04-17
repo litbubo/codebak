@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<MediaAcceleratorDatabaseEntry ObjectRef="1"/>
+	<MediaAcceleratorDatabaseEntry ObjectID="1" ClassID="e727e14d-731c-47f8-9d24-2cb69e8c5323" Version="4">
+		<Item.ContentState>ed6e218f-d139-578c-2471-63f300000024</Item.ContentState>
+		<Stream.Count>1</Stream.Count>
+		<OriginalWinPath>D:\我的\视频\在线观看《天气之子》HD1080P.日语中字 - 哔嘀影视.mp4</OriginalWinPath>
+		<OriginalMacPath></OriginalMacPath>
+		<OriginalPath>D:\我的\视频\在线观看《天气之子》HD1080P.日语中字 - 哔嘀影视.mp4</OriginalPath>
+		<Item.CanBeCopied1>false</Item.CanBeCopied1>
+		<Stream.ID1>0</Stream.ID1>
+		<Item.Path1>D:\Adobe\Peak Files\2020-09-21\在线观看《天气之子》HD1080P.日语中字 - 哔嘀影视.mp4 44100.pek</Item.Path1>
+		<Item.MacPath1></Item.MacPath1>
+		<Item.WinPath1>D:\Adobe\Peak Files\2020-09-21\在线观看《天气之子》HD1080P.日语中字 - 哔嘀影视.mp4 44100.pek</Item.WinPath1>
+		<Item.Key1>pek44100</Item.Key1>
+		<Item.ModDate1 Encoding="base64" Checksum="4039732251">xUKQOhSQ1gE=</Item.ModDate1>
+		<Item.Count1>1</Item.Count1>
+	</MediaAcceleratorDatabaseEntry>
+</PremiereData>

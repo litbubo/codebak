@@ -1,0 +1,6 @@
+SELECT
+	Sno,
+	Sname,
+	2017-Sage 
+FROM
+	Student;

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"bsp_int.h": "c",
+			"bsp_uart.h": "c",
+			"cstdio": "c",
+			"bsp_epit.h": "c",
+			"bsp_delay.h": "c"
+		}
+	}
+}

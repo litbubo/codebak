@@ -1,0 +1,8 @@
+SELECT
+	Sno,
+	Sname,
+	Ssex,
+	Sage,
+	Sdept 
+FROM
+	Student;

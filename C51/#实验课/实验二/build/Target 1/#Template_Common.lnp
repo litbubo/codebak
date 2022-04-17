@@ -1,0 +1,3 @@
+
+".\build\Target 1\main.o",".\build\Target 1\STARTUP.o" TO ".\build\Target 1\#Template_Common"
+PRINT(".\build\Target 1\#Template_Common.map") REMOVEUNUSED

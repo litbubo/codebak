@@ -1,0 +1,3 @@
+SELECT Student.Sno, Sname, Cno, Grade, Sage, Ssex
+FROM Student, SC
+WHERE SC.Cno = '03002' AND sc.Grade > 80 AND Student.Sno = SC.Sno

@@ -1,0 +1,3 @@
+UPDATE Student
+SET Sage = 30
+WHERE Sno = '1903070310';

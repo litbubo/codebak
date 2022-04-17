@@ -1,0 +1,110 @@
+LX51 LINKER/LOCATER V4.66.97.0                                                          11/12/2021  21:35:49  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.97.0, INVOKED BY:
+C:\SOFTWARE\KEIL_V5\C51\BIN\LX51.EXE .\BUILD\DEBUG\MAIN.O TO .\BUILD\DEBUG\TEMPLATE PRINT (.\build\Debug\Template.map) R
+>> EMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\BUILD\DEBUG\MAIN.O (MAIN)
+         COMMENT TYPE 0: C51 V9.60.0.0
+  C:\SOFTWARE\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\BUILD\DEBUG\TEMPLATE (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000024H   CODE
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  .\BUILD\DEBUG\TEMPLATE (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00000EH   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00000FH   000011H   000003H   BYTE   UNIT     CODE           ?PR?LED_INT?MAIN
+000012H   000012H   000001H   ---    ---      **GAP**
+000013H   000015H   000003H   BYTE   OFFS..   CODE           ?MAIN?00013
+000016H   00001DH   000008H   BYTE   UNIT     CODE           ?PR?INTER_INIT?MAIN
+00001EH   000024H   000007H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\BUILD\DEBUG\TEMPLATE (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+LED_INT/MAIN                ----- -----  ----- -----
+
+*** NEW ROOT **************
+
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> INTER_INIT/MAIN
+
+INTER_INIT/MAIN             ----- -----  ----- -----
+
+
+
+LX51 LINKER/LOCATER V4.66.97.0                                                        11/12/2021  21:35:49  PAGE 2
+
+
+PUBLIC SYMBOLS OF MODULE:  .\BUILD\DEBUG\TEMPLATE (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      0100001EH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000016H   CODE     ---       Inter_Init
+      0100000FH   CODE     ---       LED_Int
+      0100001EH   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  .\BUILD\DEBUG\TEMPLATE (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      0100001EH   PUBLIC    CODE     ---       main
+      01000016H   PUBLIC    CODE     ---       Inter_Init
+      0100000FH   PUBLIC    CODE     ---       LED_Int
+
+      0100000FH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000016H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100001EH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=9.0 xdata=0 const=0 code=36
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

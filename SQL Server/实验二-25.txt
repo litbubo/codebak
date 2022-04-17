@@ -1,0 +1,7 @@
+SELECT
+	Sno,
+	Sname 
+FROM
+	Student 
+WHERE
+	Sno IN ( SELECT Sno FROM SC, Course WHERE Cname = '数据库原理' AND SC.Cno = Course.Cno );

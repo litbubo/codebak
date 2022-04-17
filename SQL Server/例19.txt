@@ -1,0 +1,7 @@
+SELECT
+	Cno,
+	Cname 
+FROM
+	Course 
+WHERE
+	Ccredit = 7;
